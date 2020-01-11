@@ -1,11 +1,13 @@
 var editable = document.getElementById('editor');
+var contentPreview = document.getElementById('content');
 var lineColumnNb = document.getElementById('line-column-nb');
-const contentPreview = document.getElementById('content');
 
 window.addEventListener('load', () => {
 
   if (localStorage.getItem('mindown')) {
-    editable.value = localStorage.getItem('mindown');
+    let localContent = localStorage.getItem('mindown');
+    editable.value = localContent;
+    contentPreview.innerHTML = marked(localContent);
   }
 
   editable.addEventListener('input', function (e) {
