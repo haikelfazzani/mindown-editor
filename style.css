@@ -24,7 +24,7 @@ body{font-family: 'Roboto', sans-serif;}
 
 #editor,#content{ 
   color: #ffffff;
-  width: 100%; height: 100%; padding: 10px 25px 10px 45px; border: 2px dotted #5e656b; outline: none;
+  width: 100%; height: 100%; padding: 10px 20px; border: 2px dotted #5e656b; outline: none;
   overflow: auto;
 }
 
