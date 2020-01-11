@@ -20,3 +20,17 @@ function getLineNumberAndColumnIndex (textarea) {
   let currentColumnIndex = textLines[textLines.length - 1].length;
   return "Line " + currentLineNumber + "  Column " + currentColumnIndex;
 }
+
+function downloadText (text) {
+  let element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', 'mindwon.md');
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
+
+function saveText (text) {
+  localStorage.setItem('mindown', text)
+}

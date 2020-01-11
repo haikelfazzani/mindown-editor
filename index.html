@@ -51,21 +51,24 @@
       <ul class="navbar-nav">
         <li class="nav-item"><button class="nav-link" id="btn-eraser"><i class="fas fa-eraser"></i></button></li>
 
+        <li class="nav-item"><button class="nav-link" id="btn-save"><i class="fas fa-save"></i></button></li>
         <li class="nav-item"><button class="nav-link" id="open"><i class="far fa-folder-open"></i></button></li>
-        <li class="nav-item"><button class="nav-link" id="save"><i class="fas fa-download"></i></button></li>
+        <li class="nav-item"><button class="nav-link" id="btn-download"><i class="fas fa-download"></i></button></li>        
 
       </ul>
     </div>
   </nav>
 
-  <div class="container-fluid position-relative">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-6 p-0"><textarea class="bg-dark" id="editor">paste markdown here ✨</textarea></div>
       <div class="col-md-6 p-0"><div id="content"></div></div>
-    </div>
-
-    <div id="line-column-nb">Line 1 Column 0</div>
+    </div>    
   </div>
+
+  <footer>
+    <div id="line-column-nb">Line 1 Column 0</div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
   <script src="api.js"></script>
