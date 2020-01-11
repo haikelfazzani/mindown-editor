@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Lightweight markdown viewer and editor">
+  <title>MinDown - Markdown viewer and editor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-dark">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MinDown</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><button class="nav-link" id="btn-bold">bold</button></li>
+        <li class="nav-item active"><button class="nav-link" id="btn-italic">italic</button></li>
+
+        <li class="nav-item"><button class="nav-link" id="h1">h1</button></li>
+        <li class="nav-item"><button class="nav-link" id="h2">h2</button></li>
+        <li class="nav-item"><button class="nav-link" id="h3">h3</button></li>
+
+        <li class="nav-item"><button class="nav-link" id="btn-checkbox">checkbox</button></li>
+        <li class="nav-item"><button class="nav-link" id="btn-list">list</button></li>
+        <li class="nav-item"><button class="nav-link" id="btn-ordred-list">ordred list</button></li>
+
+        <li class="nav-item"><button class="nav-link" id="btn-table">table</button></li>
+        <li class="nav-item"><button class="nav-link" id="btn-blockquote">blockquote</button></li>
+
+        <li class="nav-item"><button class="nav-link" id="btn-link">link</button></li>
+        <li class="nav-item"><button class="nav-link" id="btn-image">image</button></li>
+        <li class="nav-item"><button class="nav-link" id="btn-code">code</button></li>
+        <li class="nav-item"><button class="nav-link" id="btn-block-code">block code</button></li>
+
+        <li class="nav-item"><button class="nav-link" id="open">open</button></li>
+        <li class="nav-item"><button class="nav-link" id="save">save</button></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid position-relative">
+    <div class="row">
+      <div class="col-md-6 p-0"><textarea class="bg-dark" id="editor">paste markdown here ✨</textarea></div>
+      <div class="col-md-6 p-0"><div id="content"></div></div>
+    </div>
+
+    <div id="line-column-nb">Line 1 Column 0</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
+  <script src="api.js"></script>
+  <script src="editor.js"></script>
+</body>
+
+</html>
