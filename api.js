@@ -18,7 +18,7 @@ function getLineNumberAndColumnIndex (textarea) {
   let textLines = textarea.value.substr(0, textarea.selectionStart).split("\n");
   let currentLineNumber = textLines.length;
   let currentColumnIndex = textLines[textLines.length - 1].length;
-  return "Line " + currentLineNumber + "  Column " + currentColumnIndex;
+  return { currentLineNumber, currentColumnIndex };
 }
 
 function downloadText (text) {
@@ -32,7 +32,7 @@ function downloadText (text) {
 }
 
 function saveText (text) {
-  if(text && text.length >1) {
+  if (text && text.length > 1) {
     localStorage.setItem('mindown', text);
-  }  
+  }
 }

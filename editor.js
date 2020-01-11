@@ -11,17 +11,20 @@ window.addEventListener('load', () => {
   }
 
   editable.addEventListener('input', function (e) {
-    lineColumnNb.textContent = getLineNumberAndColumnIndex(editable);
+    var { currentLineNumber, currentColumnIndex } = getLineNumberAndColumnIndex(editable);
+    lineColumnNb.textContent = 'line ' + currentLineNumber + ' Col ' + currentColumnIndex;
     contentPreview.innerHTML = marked(editable.value);
   });
 
   editable.addEventListener('mouseup', function (e) {
-    lineColumnNb.textContent = getLineNumberAndColumnIndex(editable);
+    var { currentLineNumber, currentColumnIndex } = getLineNumberAndColumnIndex(editable);
+    lineColumnNb.textContent = 'line ' + currentLineNumber + ' Col ' + currentColumnIndex;
     contentPreview.innerHTML = marked(editable.value);
   });
 
   // scroll
   editable.addEventListener('scroll', (e) => {
     contentPreview.scrollTop = editable.scrollTop;
+    numbers.scrollTop = editable.scrollTop;
   });
 });
