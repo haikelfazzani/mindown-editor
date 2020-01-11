@@ -32,5 +32,7 @@ function downloadText (text) {
 }
 
 function saveText (text) {
-  localStorage.setItem('mindown', text)
+  if(text && text.length >1) {
+    localStorage.setItem('mindown', text);
+  }  
 }
