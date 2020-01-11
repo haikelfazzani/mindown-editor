@@ -1,16 +1,24 @@
-body{color: #ffffff; font-family: 'Roboto', sans-serif;}
+body{font-family: 'Roboto', sans-serif;}
+.bg-dark { color: #ffffff !important; background-color: #1b1d1f !important; }
 
 .container-fluid,.row,.col-md-6{
   height: 90vh;
 }
 
-button {
+.navbar-nav .nav-item button {
   color: #3cefff !important;
   background-color: transparent;
   border: 0;
   text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
+.icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 #editor,#content{ 
   color: #ffffff;
   width: 100%; height: 100%; padding: 10px 20px; border: 2px dotted #5e656b; outline: none;}

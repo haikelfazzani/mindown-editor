@@ -36,15 +36,15 @@ document.querySelectorAll('button').forEach(button => {
         break;
 
       case 'btn-checkbox':
-        replaceSelectionWithHtml('- [x] ');
+        replaceSelectionWithHtml('\n- [x] ');
         break;
 
       case 'btn-list':
-        replaceSelectionWithHtml('- ');
+        replaceSelectionWithHtml('\n- ');
         break;
 
       case 'btn-ordred-list':
-        replaceSelectionWithHtml('1. ');
+        replaceSelectionWithHtml('\n1. ');
         break;
 
       case 'btn-table':
@@ -56,7 +56,7 @@ document.querySelectorAll('button').forEach(button => {
         break;
 
       case 'btn-blockquote':
-        replaceSelectionWithHtml('> ');
+        replaceSelectionWithHtml('\n> ');
         break;
 
       case 'btn-link':
@@ -68,11 +68,15 @@ document.querySelectorAll('button').forEach(button => {
         break;
 
       case 'btn-code':
-        replaceSelectionWithHtml(' ``` ', ' ``` ');
+        replaceSelectionWithHtml('\n``` ', ' ```\n');
         break;
 
       case 'btn-block-code':
-        replaceSelectionWithHtml(' ``` \n', '\n ```');
+        replaceSelectionWithHtml('\n``` \n', '\n ```\n');
+        break;
+
+      case 'btn-eraser':
+        editable.value = '';
         break;
 
       default:
