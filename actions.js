@@ -23,6 +23,10 @@ window.addEventListener('load', () => {
           replaceSelectionWithHtml('### ');
           break;
 
+          case 'strike':
+          replaceSelectionWithHtml('~~', '~~');
+          break;
+
         case 'btn-checkbox':
           replaceSelectionWithHtml('\n- [x] ');
           break;

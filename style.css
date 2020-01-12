@@ -2,7 +2,7 @@ body{font-family: 'Roboto', sans-serif;}
 .bg-dark { color: #ffffff !important; background-color: #1b1d1f !important; }
 
 .navbar{background-color: #191919;}
-.navbar-brand{color: #e91e63;}
+.navbar-brand{color: #00bcd4;}
 .container-fluid,.row,.col-md-6{
   height: 85vh;
 }
@@ -71,6 +71,7 @@ footer {
     font-size: 12px;
 }
 
+.disply{display: block !important;}
 /* window && textarea scroll style */
 textarea::-webkit-scrollbar {width: 7px;}
 
