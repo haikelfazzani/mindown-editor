@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
   // Editor : navbar actions
-  document.querySelectorAll('button').forEach(button => {
+  document.querySelectorAll('.navbar-nav button').forEach(button => {
     button.addEventListener('click', () => {
       switch (button.id) {
         case 'btn-bold':
@@ -76,15 +76,15 @@ window.addEventListener('load', () => {
           break;
 
         case 'btn-eraser':
-          editable.value = '';
+          mdEditor.value = '';
           break;
 
         case 'btn-download':
-          downloadText(editable.value)
+          downloadText(mdEditor.value)
           break;
 
         case 'btn-save':
-          saveText(editable.value)
+          saveText(mdEditor.value)
           break;
 
         case 'btn-open':
@@ -94,7 +94,7 @@ window.addEventListener('load', () => {
           break;
 
         case 'btn-html':          
-          downloadText(marked(editable.value), 'data:text/html;charset=utf-8,', 'mindown.html')
+          downloadText(marked(mdEditor.value), 'data:text/html;charset=utf-8,', 'mindown.html')
           break;
 
         default:

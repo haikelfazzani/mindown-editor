@@ -4,7 +4,7 @@
 - [x] open & save file
 - [x] Scroll Sync
 - [ ] choose color
-- [ ] resize screen
+- [x] resize screen
 - [ ] fetch from url
 
 ### Author

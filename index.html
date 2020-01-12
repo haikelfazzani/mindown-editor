@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body class="bg-dark">
@@ -49,7 +49,8 @@
         <li class="nav-item"><i class="separator">|</i></li>
         <li class="nav-item"><button class="nav-link" id="btn-line">==</button></li>
         <li class="nav-item"><button class="nav-link" id="btn-table"><i class="fas fa-table"></i></button></li>
-        <li class="nav-item"><button class="nav-link" id="btn-blockquote"><i class="fas fa-quote-right"></i></button></li>
+        <li class="nav-item"><button class="nav-link" id="btn-blockquote"><i class="fas fa-quote-right"></i></button>
+        </li>
 
         <li class="nav-item"><i class="separator">|</i></li>
         <li class="nav-item"><button class="nav-link" id="btn-link"><i class="fas fa-link"></i></button></li>
@@ -58,28 +59,30 @@
 
         <li class="nav-item"><i class="separator">|</i></li>
         <li class="nav-item"><button class="nav-link" id="btn-code"><i class="fas fa-terminal"></i></button></li>
-        <li class="nav-item"><button class="nav-link" id="btn-block-code"><i class="fas fa-laptop-code"></i></button></li>        
+        <li class="nav-item"><button class="nav-link" id="btn-block-code"><i class="fas fa-laptop-code"></i></button>
+        </li>
 
         <li class="nav-item"><i class="separator">|</i></li>
         <li class="nav-item"><button class="nav-link" id="btn-eraser"><i class="fas fa-eraser"></i></button></li>
       </ul>
 
-      <ul class="navbar-nav">    
+      <ul class="navbar-nav">
         <li class="nav-item"><button class="nav-link" id="btn-save"><i class="fas fa-save"></i></button></li>
         <li class="nav-item"><button class="nav-link" id="btn-open"><i class="far fa-folder-open"></i></button></li>
-        <li class="nav-item"><button class="nav-link" id="btn-download"><i class="fas fa-download"></i></button></li>        
-        <li class="nav-item"><button class="nav-link" id="btn-html"><i class="far fa-file-code"></i></button></li>        
+        <li class="nav-item"><button class="nav-link" id="btn-download"><i class="fas fa-download"></i></button></li>
+        <li class="nav-item"><button class="nav-link" id="btn-html"><i class="far fa-file-code"></i></button></li>
       </ul>
     </div>
   </nav>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-6 p-0 position-relative">
-        <textarea class="bg-dark" id="editor">paste markdown here ✨</textarea>
-      </div>
-      <div class="col-md-6 p-0"><div id="content"></div></div>
-    </div>    
+  <div class="container-fluid m-0 p-0">
+    <div class="flex-center">
+
+      <textarea class="bg-dark" id="editor">paste markdown here ✨</textarea>
+      <div class="resize-bar"></div>
+      <div id="content"></div>
+
+    </div>
   </div>
 
   <footer>
@@ -88,12 +91,12 @@
 
   <input type="file" id="myFileInput" hidden />
 
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="scripts/api.js"></script>
   <script src="scripts/editor.js"></script>
   <script src="scripts/actions.js" defer></script>
 
-  <script src="scripts/ui.js"></script>
+  <script src="scripts/ui.js" defer></script>
 </body>
 
 </html>

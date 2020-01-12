@@ -1,4 +1,4 @@
-var editable = document.getElementById('editor');
+var mdEditor = document.getElementById('editor');
 var contentPreview = document.getElementById('content');
 var lineColumnNb = document.getElementById('line-column-nb');
 
@@ -6,25 +6,24 @@ window.addEventListener('load', () => {
 
   if (localStorage.getItem('mindown')) {
     let localContent = localStorage.getItem('mindown');
-    editable.value = localContent;
+    mdEditor.value = localContent;
     contentPreview.innerHTML = marked(localContent);    
   }
 
-  editable.addEventListener('input', function (e) {
-    var { currentLineNumber, currentColumnIndex } = getLineNumberAndColumnIndex(editable);
+  mdEditor.addEventListener('input', function (e) {
+    var { currentLineNumber, currentColumnIndex } = getLineNumberAndColumnIndex(mdEditor);
     lineColumnNb.textContent = 'line ' + currentLineNumber + ' Col ' + currentColumnIndex;
-    contentPreview.innerHTML = marked(editable.value);
+    contentPreview.innerHTML = marked(mdEditor.value);
   });
 
-  editable.addEventListener('mouseup', function (e) {
-    var { currentLineNumber, currentColumnIndex } = getLineNumberAndColumnIndex(editable);
+  mdEditor.addEventListener('mouseup', function (e) {
+    var { currentLineNumber, currentColumnIndex } = getLineNumberAndColumnIndex(mdEditor);
     lineColumnNb.textContent = 'line ' + currentLineNumber + ' Col ' + currentColumnIndex;
-    contentPreview.innerHTML = marked(editable.value);
+    contentPreview.innerHTML = marked(mdEditor.value);
   });
 
   // scroll
-  editable.addEventListener('scroll', (e) => {
-    contentPreview.scrollTop = editable.scrollTop;
-    numbers.scrollTop = editable.scrollTop;
+  mdEditor.addEventListener('scroll', (e) => {
+    contentPreview.scrollTop = mdEditor.scrollTop;
   });
 });

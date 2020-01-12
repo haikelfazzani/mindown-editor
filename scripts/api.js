@@ -45,5 +45,43 @@ function handleFileSelect (event) {
 }
 
 function handleFileLoad (event) {
-  editable.value = event.target.result;
+  mdEditor.value = event.target.result;
+}
+
+// resize divs
+function resizeDivs (element, direction) {
+  var md; // remember mouse down info
+  element.onmousedown = onMouseDown;
+
+  function onMouseDown (e) {
+    //console.log("mouse down: " + e.clientX);
+    md = {
+      e,
+      offsetLeft: element.offsetLeft,
+      offsetTop: element.offsetTop,
+      firstWidth: mdEditor.offsetWidth,
+      secondWidth: contentPreview.offsetWidth
+    };
+    document.onmousemove = onMouseMove;
+    document.onmouseup = () => {
+      document.onmousemove = document.onmouseup = null;
+    }
+  }
+
+  function onMouseMove (e) {
+    //console.log("mouse move: " + e.clientX);
+    var delta = {
+      x: e.clientX - md.e.x,
+      y: e.clientY - md.e.y
+    };
+
+    if (direction === "H") {
+      // prevent negative-sized elements
+      delta.x = Math.min(Math.max(delta.x, -md.firstWidth),md.secondWidth);
+
+      element.style.left = md.offsetLeft + delta.x + "px";
+      mdEditor.style.width = (md.firstWidth + delta.x) + "px";
+      contentPreview.style.width = (md.secondWidth - delta.x) + "px";
+    }
+  }
 }

@@ -30,12 +30,19 @@ body{font-family: 'Roboto', sans-serif;}
     line-height: 2;
 }
 
+.flex-center { height: 100%; display: flex;}
 
 #editor,#content{ 
   color: #ffffff;
-  width: 100%; height: 100%; padding: 10px 20px; border: 2px dotted #5e656b; outline: none;
+  width: 100%; 
+  height: 100%; 
+  padding: 10px 20px; 
+  border: 2px dotted #5e656b; 
+  outline: none;
   overflow: auto;
 }
+
+.resize-bar {width: 10px; background-color: #adadad; cursor: col-resize; }
 
 #content{border-left: 0;}
 
