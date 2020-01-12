@@ -1,4 +1,4 @@
-document.querySelector('.navbar-toggler').addEventListener('click',()=>{
-
-document.querySelector('.navbar-collapse').classList.toggle('disply')
+document.querySelector('.navbar-toggler').addEventListener('click', () => {
+  document.querySelector('.navbar-collapse').classList.toggle('disply')
 });
+

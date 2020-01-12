@@ -87,6 +87,12 @@ window.addEventListener('load', () => {
           saveText(editable.value)
           break;
 
+        case 'btn-open':
+          const inputFile=document.getElementById('myFileInput');
+          inputFile.click();
+          inputFile.addEventListener('change',handleFileSelect);          
+          break;
+
         default:
           break;
       }

@@ -1,11 +1,11 @@
 # MinDown - Markdown viewer and editor
 
 ### Todo
-- [ ] more markdwon options (underline..etc.)
-- [ ] open & save file
+- [x] open & save file
 - [ ] choose color
 - [ ] resize screen
 - [x] Scroll Sync
+
 ### Author
 - [Haikel Fazzani](https://github.com/haikelfazzani)
 

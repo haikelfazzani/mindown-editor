@@ -36,3 +36,14 @@ function saveText (text) {
     localStorage.setItem('mindown', text);
   }
 }
+
+// handle file & read content
+function handleFileSelect(event){
+  const reader = new FileReader()
+  reader.onload = handleFileLoad;
+  reader.readAsText(event.target.files[0])
+}
+
+function handleFileLoad(event){
+  editable.value = event.target.result;
+}
