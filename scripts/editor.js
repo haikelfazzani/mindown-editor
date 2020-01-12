@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
   if (localStorage.getItem('mindown')) {
     let localContent = localStorage.getItem('mindown');
     editable.value = localContent;
-    contentPreview.innerHTML = marked(localContent);
+    contentPreview.innerHTML = marked(localContent);    
   }
 
   editable.addEventListener('input', function (e) {

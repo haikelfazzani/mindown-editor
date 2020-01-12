@@ -2,9 +2,10 @@
 
 ### Todo
 - [x] open & save file
+- [x] Scroll Sync
 - [ ] choose color
 - [ ] resize screen
-- [x] Scroll Sync
+- [ ] fetch from url
 
 ### Author
 - [Haikel Fazzani](https://github.com/haikelfazzani)

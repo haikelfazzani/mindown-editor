@@ -21,10 +21,10 @@ function getLineNumberAndColumnIndex (textarea) {
   return { currentLineNumber, currentColumnIndex };
 }
 
-function downloadText (text) {
+function downloadText (text, dataType = 'data:text/plain;charset=utf-8,', filename = 'mindwon.md') {
   let element = document.createElement('a');
-  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-  element.setAttribute('download', 'mindwon.md');
+  element.setAttribute('href', dataType + encodeURIComponent(text));
+  element.setAttribute('download', filename);
   element.style.display = 'none';
   document.body.appendChild(element);
   element.click();
@@ -38,12 +38,12 @@ function saveText (text) {
 }
 
 // handle file & read content
-function handleFileSelect(event){
+function handleFileSelect (event) {
   const reader = new FileReader()
   reader.onload = handleFileLoad;
   reader.readAsText(event.target.files[0])
 }
 
-function handleFileLoad(event){
+function handleFileLoad (event) {
   editable.value = event.target.result;
 }

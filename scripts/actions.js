@@ -88,9 +88,13 @@ window.addEventListener('load', () => {
           break;
 
         case 'btn-open':
-          const inputFile=document.getElementById('myFileInput');
+          const inputFile = document.getElementById('myFileInput');
           inputFile.click();
-          inputFile.addEventListener('change',handleFileSelect);          
+          inputFile.addEventListener('change', handleFileSelect);
+          break;
+
+        case 'btn-html':          
+          downloadText(marked(editable.value), 'data:text/html;charset=utf-8,', 'mindown.html')
           break;
 
         default:
