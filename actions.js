@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
           replaceSelectionWithHtml('### ');
           break;
 
-          case 'strike':
+        case 'strike':
           replaceSelectionWithHtml('~~', '~~');
           break;
 
@@ -59,12 +59,20 @@ window.addEventListener('load', () => {
           replaceSelectionWithHtml('![alt text](https://i.ibb.co/xqZX2hP/python.jpg)');
           break;
 
+        case 'btn-yt':
+          replaceSelectionWithHtml('\n[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/t47sBiy2lfo/0.jpg)](http://www.youtube.com/watch?v=t47sBiy2lfo)');
+          break;
+
         case 'btn-code':
           replaceSelectionWithHtml('\n``` ', ' ```\n');
           break;
 
         case 'btn-block-code':
           replaceSelectionWithHtml('\n``` \n', '\n ```\n');
+          break;
+
+        case 'btn-line':
+          replaceSelectionWithHtml('\n___\n');
           break;
 
         case 'btn-eraser':

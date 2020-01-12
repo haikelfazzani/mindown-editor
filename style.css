@@ -71,7 +71,9 @@ footer {
     font-size: 12px;
 }
 
+hr{border-top: 1px solid #5e656b;}
 .disply{display: block !important;}
+blockquote{border-left: 2px solid #adadad; padding-left: 10px; color: #adadad !important;}
 /* window && textarea scroll style */
 textarea::-webkit-scrollbar {width: 7px;}
 
