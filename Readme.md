@@ -5,7 +5,7 @@
 - [ ] open & save file
 - [ ] choose color
 - [ ] resize screen
-
+Scroll Sync
 ### Author
 - [Haikel Fazzani](https://github.com/haikelfazzani)
 
