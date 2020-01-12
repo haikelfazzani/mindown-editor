@@ -45,9 +45,7 @@ body{font-family: 'Roboto', sans-serif;}
 .resize-bar {width: 10px; background-color: #adadad; cursor: col-resize; }
 
 #content{border-left: 0;}
-#editor {
-  resize: none;
-}
+#editor {resize: none; border-right: 0;}
 
 img {
   max-width: 100%;
