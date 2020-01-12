@@ -7,6 +7,9 @@
 - [x] resize screen
 - [ ] fetch from url
 
+### Capture
+![capture](https://i.ibb.co/8gFFN2J/Capture.png)
+
 ### Author
 - [Haikel Fazzani](https://github.com/haikelfazzani)
 
