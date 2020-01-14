@@ -70,18 +70,32 @@ function resizeDivs (element, direction) {
 
   function onMouseMove (e) {
     //console.log("mouse move: " + e.clientX);
-    var delta = {
-      x: e.clientX - md.e.x,
-      y: e.clientY - md.e.y
-    };
+    var delta = { x: e.clientX - md.e.x, y: e.clientY - md.e.y };
 
     if (direction === "H") {
       // prevent negative-sized elements
-      delta.x = Math.min(Math.max(delta.x, -md.firstWidth),md.secondWidth);
+      delta.x = Math.min(Math.max(delta.x, -md.firstWidth), md.secondWidth);
 
       element.style.left = md.offsetLeft + delta.x + "px";
       mdEditor.style.width = (md.firstWidth + delta.x) + "px";
       contentPreview.style.width = (md.secondWidth - delta.x) + "px";
+    }
+  }
+}
+
+function createToolTip (parentNode,e) {
+  if (e.offsetX >= 0 && e.offsetX <= parentNode.offsetWidth && e.offsetY >= 0 && e.offsetY <= parentNode.offsetHeight) {
+    var tooltip = document.createElement("span");
+    tooltip.classList.add('tooltiptext');
+
+    tooltip.style.top = (parentNode.offsetTop + 30) + 'px';
+    tooltip.style.left = (parentNode.offsetLeft + 10) + 'px';
+
+    tooltip.textContent = parentNode.getAttribute('data-tooltip');
+    document.body.appendChild(tooltip);
+
+    if ((tooltip.offsetWidth + tooltip.offsetLeft) >= screen.width) {
+      tooltip.style.left = (screen.width - (tooltip.offsetWidth + 50)) + 'px';
     }
   }
 }
