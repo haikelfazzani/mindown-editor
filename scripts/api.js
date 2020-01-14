@@ -32,7 +32,7 @@ function downloadText (text, dataType = 'data:text/plain;charset=utf-8,', filena
 }
 
 function saveText (text) {
-  if (text && text.length > 1) {
+  if (text && text.length >= 1) {
     localStorage.setItem('mindown', text);
   }
 }

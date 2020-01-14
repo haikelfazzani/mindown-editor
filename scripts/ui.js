@@ -7,13 +7,14 @@ const resizeBarElement = document.querySelector('.resize-bar');
 resizeDivs(resizeBarElement, "H");
 
 // create tooltip
-const btnToolTip = document.querySelectorAll('[data-tooltip]');
+var btnToolTip = document.querySelectorAll('[data-tooltip]');
 btnToolTip.forEach(t => {
   t.addEventListener("mouseover", (e) => {
-    createToolTip(t,e);
+    createToolTip(t, e);
   });
 
   t.addEventListener("mouseout", () => {
-    document.body.removeChild(document.querySelector('.tooltiptext'));
+    let tooltipText = document.querySelector('.tooltiptext');
+    if (tooltipText) { document.body.removeChild(tooltipText); }
   });
 });
