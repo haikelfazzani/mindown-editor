@@ -9,8 +9,10 @@
 - [x] resize divs (splitter screen)
 - [x] tooltip for each navbar button (tooltip attr - indicator)
 - [x] get line number and column index in textarea (cursor)
-- [ ] choose color (styling md)
 - [x] fetch md file from url
+- [ ] choose color (styling md)
+- [ ] emoji
+- [ ] share content
 - [ ] md (or html) to pdf
 
 ### Tech
