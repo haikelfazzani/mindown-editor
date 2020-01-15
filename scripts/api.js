@@ -99,3 +99,15 @@ function createToolTip (parentNode, e) {
     }
   }
 }
+
+// fetch file md from url
+function checkExtension (url) {
+  var pattern = /\.(md|txt)$/gi;
+  return pattern.test(url);
+}
+
+async function fetchFromUrl (url) {
+  const resp = await fetch(url);
+  const respText = await resp.text();
+  return respText
+}
