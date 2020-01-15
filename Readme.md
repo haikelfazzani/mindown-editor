@@ -1,4 +1,4 @@
-# MinDown - Markdown viewer and editor
+# MinDown - Online markdown viewer and editor
 
 ![capture](https://i.ibb.co/8gFFN2J/Capture.png)
 

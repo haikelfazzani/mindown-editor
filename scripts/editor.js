@@ -7,9 +7,10 @@ window.addEventListener('load', () => {
   if (localStorage.getItem('mindown')) {
     let localContent = localStorage.getItem('mindown');
     mdEditor.value = localContent;
-    contentPreview.innerHTML = marked(localContent);    
+    contentPreview.innerHTML = marked(localContent);
   }
 
+  // Cursor : get Line Number And Column Index
   mdEditor.addEventListener('input', function (e) {
     var { currentLineNumber, currentColumnIndex } = getLineNumberAndColumnIndex(mdEditor);
     lineColumnNb.textContent = 'line ' + currentLineNumber + ' Col ' + currentColumnIndex;
@@ -22,7 +23,7 @@ window.addEventListener('load', () => {
     contentPreview.innerHTML = marked(mdEditor.value);
   });
 
-  // scroll
+  // scroll sync : preview with editor
   mdEditor.addEventListener('scroll', (e) => {
     contentPreview.scrollTop = mdEditor.scrollTop;
   });

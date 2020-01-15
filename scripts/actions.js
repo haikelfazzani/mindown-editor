@@ -75,16 +75,20 @@ window.addEventListener('load', () => {
           replaceSelectionWithHtml('\n___\n');
           break;
 
+        case 'btn-date-time':
+          replaceSelectionWithHtml(' ' + new Date().toString().slice(0, 24) + ' ');
+          break;
+
         case 'btn-eraser':
           mdEditor.value = '';
           break;
 
         case 'btn-download':
-          downloadText(mdEditor.value)
+          downloadText(mdEditor.value);
           break;
 
         case 'btn-save':
-          saveText(mdEditor.value)
+          saveText(mdEditor.value);
           break;
 
         case 'btn-open':
@@ -93,8 +97,8 @@ window.addEventListener('load', () => {
           inputFile.addEventListener('change', handleFileSelect);
           break;
 
-        case 'btn-html':          
-          downloadText(marked(mdEditor.value), 'data:text/html;charset=utf-8,', 'mindown.html')
+        case 'btn-html':
+          downloadText(marked(mdEditor.value), 'data:text/html;charset=utf-8,', 'mindown.html');
           break;
 
         default:
