@@ -1,7 +1,7 @@
-body{font-family: 'Open Sans', sans-serif;}
+body{font-family: 'Open Sans', sans-serif; overflow: hidden;}
 .bg-dark { color: #ffffff !important; background-color: #1b1d1f !important; }
 
-.navbar{font-family: 'Roboto', sans-serif; background-color: #191919;}
+.navbar{font-family: 'Roboto', sans-serif; background-color: #1c1c1e; border-bottom: 1px solid #343434;}
 .navbar-brand{color: #00bcd4;}
 .container-fluid,.row,.col-md-6{
   height: 85vh;
@@ -37,7 +37,7 @@ body{font-family: 'Open Sans', sans-serif;}
   width: 100%; 
   height: 100%; 
   padding: 10px 20px; 
-  border: 2px dotted #5e656b; 
+  border: 0; 
   outline: none;
   overflow: auto;
 }
@@ -73,7 +73,8 @@ pre { color: #E91E63 !important; }
 footer {
   width: 100%;
   height: 100%;
-  background-color: #191919;
+  background-color: #1c1c1e;
+  border-top: 1px solid #343434;
     padding: 10px 20px;
     font-size: 12px;
     display: flex;
