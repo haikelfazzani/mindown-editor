@@ -15,9 +15,9 @@ function replaceSelectionWithHtml (startTag, endTag) {
 }
 
 function getLineNumberAndColumnIndex (textarea) {
-  let textLines = textarea.value.substr(0, textarea.selectionStart).split("\n");
-  let currentLineNumber = textLines.length;
-  let currentColumnIndex = textLines[textLines.length - 1].length;
+  let texts = textarea.value.slice(0, textarea.selectionStart).split(/\n|\r\n/);
+  let currentLineNumber = texts.length;
+  let currentColumnIndex = texts[texts.length - 1].length;
   return { currentLineNumber, currentColumnIndex };
 }
 
@@ -83,7 +83,7 @@ function resizeDivs (element, direction) {
   }
 }
 
-function createToolTip (parentNode,e) {
+function createToolTip (parentNode, e) {
   if (e.offsetX >= 0 && e.offsetX <= parentNode.offsetWidth && e.offsetY >= 0 && e.offsetY <= parentNode.offsetHeight) {
     var tooltip = document.createElement("span");
     tooltip.classList.add('tooltiptext');
