@@ -3,6 +3,7 @@
 ![capture](https://i.ibb.co/8gFFN2J/Capture.png)
 
 ### Todo
+- [x] PWA (Workbox)
 - [x] replace selected text (inside textarea) with Html
 - [x] open & save file
 - [x] scroll sync between editor and preview
@@ -16,6 +17,7 @@
 - [ ] md (or html) to pdf
 
 ### Tech
+- Workbox
 - [marked](https://github.com/markedjs/marked)
 - Bootstrap
 - FontAwesome

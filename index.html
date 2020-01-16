@@ -111,6 +111,13 @@
     <div>Made with ❤️ by <a href="https://github.com/haikelfazzani">Haikel Fazzani</a></div>
   </footer>
 
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js') // THIS WORKS!!!
+    }
+  </script>
+
   <input type="file" id="myFileInput" hidden />
   <input type="text" class="form-control w-50" id="from-url" placeholder="Enter an url">
 
@@ -121,6 +128,7 @@
 
   <script src="scripts/ui.js" defer></script>
   <script src="scripts/keyboard.js" defer></script>
+
 </body>
 
 </html>
