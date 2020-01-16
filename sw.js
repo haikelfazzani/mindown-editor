@@ -6,6 +6,11 @@ if (workbox) {
   workbox.precaching.precacheAndRoute([{ url: '/index.html', revision: 'abcd1234' },]);
 
   workbox.routing.registerRoute(
+    /\.(?:html)$/,
+    new workbox.strategies.CacheFirst({ cacheName: 'html-pages' })
+  );
+
+  workbox.routing.registerRoute(
     /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
     new workbox.strategies.CacheFirst({ cacheName: 'images' })
   );
