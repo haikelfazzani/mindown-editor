@@ -3,6 +3,7 @@
 ![capture](https://i.ibb.co/8gFFN2J/Capture.png)
 
 ### Done
+- [x] Live preview
 - [x] Full screen mode
 - [x] PWA (Workbox)
 - [x] replace selected text (inside textarea) with Html
@@ -25,6 +26,9 @@
 - Bootstrap
 - FontAwesome
 - [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API/Guide)
+
+### Logo
+![](icon-256.png)
 
 ### Author
 - [Haikel Fazzani](https://github.com/haikelfazzani)
