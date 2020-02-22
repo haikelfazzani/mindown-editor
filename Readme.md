@@ -2,7 +2,8 @@
 
 ![capture](https://i.ibb.co/8gFFN2J/Capture.png)
 
-### Todo
+### Done
+- [x] Full screen mode
 - [x] PWA (Workbox)
 - [x] replace selected text (inside textarea) with Html
 - [x] open & save file
@@ -11,6 +12,8 @@
 - [x] tooltip for each navbar button (tooltip attr - indicator)
 - [x] get line number and column index in textarea (cursor)
 - [x] fetch md file from url
+
+### Todo
 - [ ] choose color (styling md)
 - [ ] emoji
 - [ ] share content
@@ -21,6 +24,7 @@
 - [marked](https://github.com/markedjs/marked)
 - Bootstrap
 - FontAwesome
+- [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API/Guide)
 
 ### Author
 - [Haikel Fazzani](https://github.com/haikelfazzani)

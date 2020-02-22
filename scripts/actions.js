@@ -101,6 +101,16 @@ window.addEventListener('load', () => {
           downloadText(marked(mdEditor.value), 'data:text/html;charset=utf-8,', 'mindown.html');
           break;
 
+        case 'btn-full-screen':
+          if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen();
+          } else {
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+            }
+          }
+          break;
+
         default:
           break;
       }

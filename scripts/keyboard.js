@@ -26,5 +26,18 @@ window.addEventListener('load', () => {
       downloadText(marked(mdEditor.value), 'data:text/html;charset=utf-8,', 'mindown.html');
       return false;
     }
+
+    // full screen mode
+    if (e.ctrlKey && e.keyCode === 13) {
+      e.preventDefault();
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+      return false;
+    }
   });
 });
