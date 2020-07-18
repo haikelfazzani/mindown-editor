@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/haikelfazzani"><img src="https://raw.githubusercontent.com/haikelfazzani/mindown-editor/blob/master/logo.png" alt="mindown" width="200"></a>
+  <a href="https://github.com/haikelfazzani"><img src="mindown-editor/blob/master/logo.png" alt="mindown" width="200"></a>
   <br>
   <h1>Mindown</h1>
 	<p> Online markdown viewer and editor</p>
