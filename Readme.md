@@ -1,7 +1,8 @@
 <div align="center">
-  <a href="https://github.com/haikelfazzani"><img src="https://raw.githubusercontent.com/haikelfazzani/mindown-editor/blob/master/logo.png" alt="mindown" width="200">MinDown - Online markdown viewer and editor</a>
+  <a href="https://github.com/haikelfazzani"><img src="https://raw.githubusercontent.com/haikelfazzani/mindown-editor/blob/master/logo.png" alt="mindown" width="200"></a>
   <br>
-  <h1>Haikel Fazzani</h1>
+  <h1>Mindown</h1>
+	<p> Online markdown viewer and editor</p>
   <sub>Built with ❤︎ by
   <a href="https://github.com/haikelfazzani">Haikel Fazzani</a>
 	</sub>
