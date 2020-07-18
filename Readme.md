@@ -1,5 +1,16 @@
 # MinDown - Online markdown viewer and editor
 
+<div align="center">
+  <a href="https://github.com/haikelfazzani"><img src="https://raw.githubusercontent.com/haikelfazzani/mindown-editor/blob/master/logo.png" alt="mindown" width="200"></a>
+  <br>
+  <h1>Haikel Fazzani</h1>
+  <sub>Built with ❤︎ by
+  <a href="https://github.com/haikelfazzani">Haikel Fazzani</a>
+	</sub>
+</div>
+
+---
+
 ![capture](https://i.ibb.co/8gFFN2J/Capture.png)
 
 ### Done
@@ -26,12 +37,6 @@
 - Bootstrap
 - FontAwesome
 - [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API/Guide)
-
-### Logo
-![](icon-256.png)
-
-### Author
-- [Haikel Fazzani](https://github.com/haikelfazzani)
 
 ## License
 MIT
